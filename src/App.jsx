@@ -17,7 +17,7 @@ function App() {
   const dispatch = useDispatch()
   
   useEffect(() => {
-    const url = 'http://localhost:8080/hotels'
+    const url = 'https://booking-app-back-qqhn.onrender.com/hotels'
     dispatch(getHotelsThunk(url))
   }, [])
 

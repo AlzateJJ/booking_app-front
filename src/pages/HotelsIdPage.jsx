@@ -12,7 +12,7 @@ const HotelsIdPage = () => {
   const [hotelInfo, getHotelInfo] = useFetch();
 
   useEffect(() => {
-    const url = "http://localhost:8080/hotels/";
+    const url = "https://booking-app-back-qqhn.onrender.com/hotels/";
     getHotelInfo(url, id);
   }, [id]);
 

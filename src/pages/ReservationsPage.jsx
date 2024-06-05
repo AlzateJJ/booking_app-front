@@ -9,7 +9,7 @@ const ReservationsPage = () => {
     const [currentReservation, setCurrentReservation] = useState()
 
     useEffect(() => {
-      const url = 'http://localhost:8080/bookings'
+      const url = 'https://booking-app-back-qqhn.onrender.com/bookings'
       getReservations(url)
     }, [])
 

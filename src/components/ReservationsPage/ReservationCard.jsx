@@ -14,7 +14,7 @@ const ReservationCard = ({ reservation, setCurrentReservation, deleteRes }) => {
   }
 
   const deleteReservation = () => {
-    const url = `http://localhost:8080/bookings/${reservation?.id}`
+    const url = `https://booking-app-back-qqhn.onrender.com/bookings/${reservation?.id}`
     deleteRes(url, reservation?.id)
   }
 

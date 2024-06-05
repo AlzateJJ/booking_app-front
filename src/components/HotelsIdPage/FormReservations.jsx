@@ -9,7 +9,7 @@ const FormReservations = ({ hotelId }) => {
   const submit = (data) => {
     data.hotelId = hotelId;
     // console.log(data)
-    const url = "http://localhost:8080/bookings";
+    const url = "https://booking-app-back-qqhn.onrender.com/bookings";
     createReservations(url, data);
 
     reset({

@@ -6,7 +6,7 @@ const useAuth = () => {
     const navigate = useNavigate()
     //Register
     const registerUser = (user) => {
-        const url = 'http://localhost:8080/users'
+        const url = 'https://booking-app-back-qqhn.onrender.com/users'
         axios.post(url, user)
             .then(res => {
                 navigate('/login')
@@ -17,7 +17,7 @@ const useAuth = () => {
 
     //Login
     const loginUser = (userLoginData) => {
-        const url = 'http://localhost:8080/users/login'
+        const url = 'https://booking-app-back-qqhn.onrender.com/users/login'
         axios.post(url, userLoginData)
             .then(res => {
                 navigate('/')

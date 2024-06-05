@@ -10,7 +10,7 @@ const CategoryFilter = () => {
     const dispatch = useDispatch()
 
     useEffect(() => {
-        getHotelsCities('http://localhost:8080/', 'cities') // http://localhost:8080/
+        getHotelsCities('https://booking-app-back-qqhn.onrender.com/', 'cities') // https://booking-app-back-qqhn.onrender.com/
     }, [])
     
     // console.log(hotelsCities)
@@ -19,9 +19,9 @@ const CategoryFilter = () => {
         let url
 
         if (id) {
-            url = `http://localhost:8080/hotels?cityId=${id}`
+            url = `https://booking-app-back-qqhn.onrender.com/hotels?cityId=${id}`
         } else {
-            url = 'http://localhost:8080/hotels'
+            url = 'https://booking-app-back-qqhn.onrender.com/hotels'
         }
         
         dispatch(getHotelsThunk(url))

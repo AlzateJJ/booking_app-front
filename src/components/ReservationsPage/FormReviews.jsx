@@ -13,7 +13,7 @@ const FormReviews = ({ currentReservation, setCurrentReservation }) => {
         data.hotelId = currentReservation?.hotel.id
         data.rating = Number(data.rating)
         console.log(data)
-        const url = 'http://localhost:8080/reviews'
+        const url = 'https://booking-app-back-qqhn.onrender.com/reviews'
         createReview(url, data)
         setCurrentReservation()
         reset({

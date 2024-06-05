@@ -8,7 +8,7 @@ const HotelsNear = ( { id, hotelId } ) => {
 
     useEffect(() => {
         if (id) {
-            const url = "http://localhost:8080/hotels?cityId=";
+            const url = "https://booking-app-back-qqhn.onrender.com/hotels?cityId=";
             getHotelsInCity(url, id)            
         }
     }, [id])
