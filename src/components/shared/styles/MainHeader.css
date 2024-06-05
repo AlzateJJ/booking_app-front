@@ -1,0 +1,49 @@
+
+.mainHeader {
+    padding: 1.5em 2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3em;
+    box-shadow: 0 0 1em #0004;
+
+    .mainHeader__logo {
+        color: purple;
+        text-decoration: none;
+        font-size: 1.9rem;
+    }
+
+    .mainHeader__nav {
+
+        .mainHeader__list {
+            display: flex;
+            gap: 1.2em;
+            list-style-type: none;
+            text-decoration: none;
+            justify-content: center;
+            align-items: center;
+            
+            
+            .mainHeader__li {
+                border-radius: 1em;
+                transition: transform 0.3s ease;
+                text-align: center;
+
+                .mainHeader__link {
+                    text-decoration: none;
+                    color: black;
+                    padding: 0.5em 1em;
+
+                    &:hover {
+                        color: white;
+                    }
+    
+                }
+                &:hover {
+                    background-color: rgb(233, 53, 53);
+                    transform: scale(1.3);
+                }
+            }
+        }
+    }
+}
